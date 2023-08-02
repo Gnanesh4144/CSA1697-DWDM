@@ -1,1 +1,5 @@
-
+age <- 35
+age_min <- 18
+age_max <- 65
+age_normalized_min_max <- (age - age_min) / (age_max - age_min)
+print(age_normalized_min_max)
