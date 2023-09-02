@@ -1,0 +1,13 @@
+vegetarian <- c("yes", "yes", "yes", "no", "yes", "no", "no", "yes", "yes", "yes")
+table(vegetarian)
+
+person_matrix <- matrix(c("yes", "yes", "yes", "no", "yes", "no", "no", "yes", "yes", "yes"), nrow = 1)
+row_sums <- rowSums(person_matrix == "yes")
+total_rows <- nrow(person_matrix)
+if (sum(row_sums) > (total_rows - sum(row_sums))) {
+  print("There are more vegetarians than non-vegetarians.")
+} else if (sum(row_sums) < (total_rows - sum(row_sums))) {
+  print("There are more non-vegetarians than vegetarians.")
+} else {
+  print("There are an equal number of vegetarians and non-vegetarians.")
+}
