@@ -1,0 +1,13 @@
+@relation items_purchased
+@attribute bread{true,false}
+@attribute cheese{true,false}
+@attribute egg{true,false}
+@attribute juice{true,false}
+@attribute milk{true,false}
+@attribute yogurt{true,false}
+@data
+true true true true false false 
+true true false true false false
+true false false false true true
+true false false true true false
+false  true false true true false
